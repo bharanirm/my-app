@@ -1,8 +1,8 @@
 pipeline {
-  agent any
- /* agent { 
-      label 'Slave1'
-      } */
+ 
+ agent {
+        label 'WindowsNode'
+    }
   stages {
     stage('compile') {
       steps {

@@ -9,8 +9,9 @@ pipeline {
 		//def mvnHome = tool 'maven_install'
            
 	    //bat(/"C:\apache-maven-3.5.3-bin\apache-maven-3.5.3\bin\mvn" -Dmaven.test.failure.ignore clean package/)
-	     bat(/"C:\Program Files\apache-maven-3.8.1\bin\mvn" -Dmaven.test.failure.ignore clean package/) 
+	    // bat(/"C:\Program Files\apache-maven-3.8.1\bin\mvn" -Dmaven.test.failure.ignore clean package/) 
 	   // sh ("/data/maven/apache-maven-3.5.0/bin/mvn -Dmaven.test.failure.ignore clean package")
+	      bat(mvn install)
       }
     }
     stage('archive and Results') {
